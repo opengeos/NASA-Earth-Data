@@ -28,7 +28,7 @@ df = pd.read_csv(url, sep='\t')
 df.head()
 ```
 
-There are over 9,000 NASA Earth data products available. The list is being updated daily. Feel free to explore the data and utilize it for your research, analysis, and Earth science projects.
+There are over 9,000 NASA Earth science data products available. The list is being updated daily. Feel free to explore the data and utilize it for your research, analysis, and Earth science projects.
 
 ## Related Projects
 
