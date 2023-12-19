@@ -1,0 +1,2 @@
+earthaccess
+pandas
