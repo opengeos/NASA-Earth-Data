@@ -22,7 +22,7 @@ def get_info(dataset):
         info["s3-links"] = dataset["meta"]["s3-links"]
     except:
         info["s3-links"] = ""
-    info["granule-count"] = dataset["meta"]["granule-count"]
+    # info["granule-count"] = dataset["meta"]["granule-count"]
     try:
         info["Creator"] = dataset["umm"]["CollectionCitations"][0]["Creator"]
     except:
