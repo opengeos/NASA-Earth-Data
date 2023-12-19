@@ -57,7 +57,7 @@ data = [get_info(dataset) for dataset in datasets]
 df = pd.DataFrame(data)
 df.sort_values(by=["ShortName"], inplace=True)
 
-df.to_csv("nasa_earth_data.tsv", index=False)
+df.to_csv("nasa_earth_data.tsv", index=False, sep="\t")
 
 with open("nasa_earth_data.json", "w") as f:
     json.dump(df.to_dict("records"), f, indent=4)
