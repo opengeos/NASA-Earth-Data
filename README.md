@@ -9,7 +9,7 @@ This repository provides a comprehensive list of NASA's Earth science data produ
 
 You can access the NASA Earth science data through the official Earthdata website at [earthdata.nasa.gov](https://earthdata.nasa.gov). To download and access the data, you will need to create an Earthdata login. You can register for an account at [urs.earthdata.nasa.gov](https://urs.earthdata.nasa.gov).
 
-The repository includes a curated list of NASA Earth data compiled using the Python package called [earthaccess](https://github.com/nsidc/earthaccess). The list is available in two formats: Tab Separated Values (TSV) and JSON.
+The repository includes a curated list of NASA Earth science data products compiled using the Python package called [earthaccess](https://github.com/nsidc/earthaccess). The list is available in two formats: Tab Separated Values (TSV) and JSON.
 
 ## Usage
 
