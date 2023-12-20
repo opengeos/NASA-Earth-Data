@@ -23,6 +23,56 @@ def get_info(dataset):
     except:
         info["s3-links"] = ""
     # info["granule-count"] = dataset["meta"]["granule-count"]
+
+    try:
+        bbox_crs = dataset["umm"]["SpatialExtent"]["HorizontalSpatialDomain"][
+            "Geometry"
+        ]["CoordinateSystem"]
+        coords = dataset["umm"]["SpatialExtent"]["HorizontalSpatialDomain"]["Geometry"][
+            "BoundingRectangles"
+        ][0]
+        bbox = [
+            coords["WestBoundingCoordinate"],
+            coords["SouthBoundingCoordinate"],
+            coords["EastBoundingCoordinate"],
+            coords["NorthBoundingCoordinate"],
+        ]
+
+        info["bbox-crs"] = bbox_crs
+        info["bbox"] = bbox
+    except:
+        info["bbox-crs"] = ""
+        info["bbox"] = ""
+
+    try:
+        grid_res = dataset["umm"]["SpatialExtent"]["HorizontalSpatialDomain"][
+            "ResolutionAndCoordinateSystem"
+        ]["HorizontalDataResolution"]["GriddedResolutions"]
+        grid_res_unit = grid_res[0]["Unit"]
+        grid_res_x = grid_res[0]["XDimension"]
+        grid_res_y = grid_res[0]["YDimension"]
+
+        info["grid-res-unit"] = grid_res_unit
+        info["grid-res-x"] = grid_res_x
+        info["grid-res-y"] = grid_res_y
+    except:
+        info["grid-res-unit"] = ""
+        info["grid-res-x"] = ""
+        info["grid-res-y"] = ""
+
+    try:
+        start_time = dataset["umm"]["TemporalExtents"][0]["RangeDateTimes"][0][
+            "BeginningDateTime"
+        ]
+        end_time = dataset["umm"]["TemporalExtents"][0]["RangeDateTimes"][0][
+            "EndingDateTime"
+        ]
+        info["start-time"] = start_time
+        info["end-time"] = end_time
+    except:
+        info["start-time"] = ""
+        info["end-time"] = ""
+
     try:
         info["Creator"] = dataset["umm"]["CollectionCitations"][0]["Creator"]
     except:
