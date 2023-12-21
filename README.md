@@ -27,6 +27,7 @@ url = 'https://github.com/opengeos/NASA-Earth-Data/raw/main/nasa_earth_data.tsv'
 df = pd.read_csv(url, sep='\t')
 df.head()
 ```
+
 Here is an example of how to read the TSV file into a DataFrame using R:
 
 ```R
@@ -36,6 +37,7 @@ url <- 'https://github.com/opengeos/NASA-Earth-Data/raw/main/nasa_earth_data.tsv
 df <- fread(url, sep='\t')
 print(head(df))
 ```
+
 There are over 9,000 NASA Earth science data products available. The list is being updated daily. Feel free to explore the data and utilize it for your research, analysis, and Earth science projects.
 
 ## Related Projects
