@@ -459473,7 +459473,7 @@
                 "Unit": "Kilometers"
             }
         ],
-        "start-time": "2025-01-01T00:00:00.000Z",
+        "start-time": "2026-01-01T00:00:00.000Z",
         "end-time": "",
         "Creator": "",
         "Publisher": "NASA National Snow and Ice Data Center Distributed Active Archive Center",
@@ -459503,7 +459503,7 @@
                 "Unit": "Kilometers"
             }
         ],
-        "start-time": "2025-01-01T00:00:00.000Z",
+        "start-time": "2026-01-01T00:00:00.000Z",
         "end-time": "",
         "Creator": "",
         "Publisher": "NASA National Snow and Ice Data Center Distributed Active Archive Center",
@@ -518846,7 +518846,7 @@
         ],
         "horizontal_res": "",
         "start-time": "2015-02-12T16:02:58.000Z",
-        "end-time": "2026-10-12T04:47:24.000Z",
+        "end-time": "2026-10-13T05:24:18.000Z",
         "Creator": "",
         "Publisher": "",
         "ReleaseDate": "",
@@ -518918,7 +518918,7 @@
         ],
         "horizontal_res": "",
         "start-time": "2015-02-12T16:02:58.000Z",
-        "end-time": "2026-10-12T04:47:24.000Z",
+        "end-time": "2026-10-13T05:24:18.000Z",
         "Creator": "",
         "Publisher": "",
         "ReleaseDate": "",
@@ -518990,7 +518990,7 @@
         ],
         "horizontal_res": "",
         "start-time": "2015-02-12T16:02:58.000Z",
-        "end-time": "2026-10-12T04:47:24.000Z",
+        "end-time": "2026-10-13T05:24:18.000Z",
         "Creator": "",
         "Publisher": "",
         "ReleaseDate": "",
