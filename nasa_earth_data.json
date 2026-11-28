@@ -425277,7 +425277,9 @@
         "DOI": "10.5067/Aura/MLS/DATA2524",
         "concept-id": "C3788558117-GES_DISC",
         "provider-id": "GES_DISC",
-        "s3-links": "",
+        "s3-links": [
+            "s3://gesdisc-cumulus-prod-protected/Aura_MLS_Level2/ML2EDMPMERRA2.005/"
+        ],
         "bbox-crs": "CARTESIAN",
         "bbox": [
             -180,
